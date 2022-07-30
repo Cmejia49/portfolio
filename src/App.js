@@ -1,13 +1,17 @@
+import Developer from "./components/Developer";
+import Navbar from "./components/Navbar";
+import Particle from "./components/Particle";
+import Skills from "./components/Skills";
 
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-      </header>
+    <div>
+      <Particle/>
+      <Navbar/>
+      <Developer/>
+      <Skills/>
     </div>
   );
 }
