@@ -14,11 +14,13 @@ import mysql from '../assets/mysql.png'
 import sqlite from '../assets/sqlite.png'
 import git from '../assets/git.png'
 import gitHub from '../assets/github.png'
+import Fade from 'react-reveal/Fade';
 const Skills = () => {
   return (
     <div className='w-full py-[10rem] px-4 bg-white'>
         <h1 className='font-bold text-center text-5xl'>SKILLS</h1>
     <div className='max-w-[1240px] mx-auto grid md:grid-cols-5 my-4 gap-8'>
+    <Fade bottom>
         <div className='w-full shadow-xl scale-100 flex flex-col p-4 my-4 rounded-lg  items-center bg-white'>
             <h1 className='font-bold text-2xl'>FRONT-END</h1>
            <ul className=' p-4'>
@@ -66,6 +68,7 @@ const Skills = () => {
           
            </ul>
         </div>
+        </Fade>
     </div>
   </div>
   )
