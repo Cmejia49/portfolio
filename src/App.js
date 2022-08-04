@@ -9,10 +9,14 @@ import Skills from "./components/Skills";
 import Zoom from 'react-reveal/Zoom';
 import Slide from 'react-reveal/Slide';
 function App() {
+  const topRef = useRef(null)
   const skilRef = useRef(null); 
   const projectRef = useRef(null); 
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
+  const handleTop = () =>{
+    topRef.current.scrollIntoView({behavior : 'smooth'})
+  }
   const handleSkill = ()=>{
     skilRef.current.scrollIntoView({ behavior: 'smooth' })
   }
@@ -28,14 +32,17 @@ function App() {
   return (
     <div>
       <Navbar
+        clickTop={()=>{handleTop()}}
         clickSkill={()=>{handleSkill()}}
         clickProject={()=>{handleProject()}}
         clickAbout={()=>{handleAbout()}}
         clickContact={()=>{handleContact()}}/>
       <Particle/>
+      <div ref={topRef}>
       <Zoom>
         <Developer/>
       </Zoom>
+      </div>
       <div ref={skilRef}>
         <Skills/>
       </div>
