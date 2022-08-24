@@ -27,7 +27,7 @@ const Projects = () => {
                   <div className="px-[5rem] flex justify-center items-center flex-col p-8 md:w-1/2">
                     <h3 className='font-bold text-size justify-center text-3xl'>{i.Title}</h3>
                     <p className="mt-2 text-slate-500">{i.Description}</p>
-                    <div className=' flex flex-row mt-2 border-b p-3 md:flex md:flex-row'>
+                    <div className=' flex flex-row flex-wrap mt-2 border-b p-3 md:flex md:flex-row'>
                       {i.Tools.map((t,ind)=>
                         <ToolCard text={t}/>
                       )}
@@ -46,7 +46,7 @@ const Projects = () => {
                   <div className="px-[5rem] flex justify-center items-center flex-col p-8 md:w-1/2">
                     <h3 className='font-bold text-size justify-center text-3xl'>{i.Title}</h3>
                     <p className="mt-2 text-slate-500">{i.Description}</p>
-                    <div className='flex flex-row mt-2 border-b p-3 md:flex md:flex-row'>
+                    <div className='flex flex-row flex-wrap mt-2 border-b p-3 md:flex md:flex-row'>
                       {i.Tools.map((t,ind)=>
                         <ToolCard text={t}/>
                       )}

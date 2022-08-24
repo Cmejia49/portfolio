@@ -8,9 +8,9 @@ import {
   } from 'react-icons/fa';
 const Footer = () => {
   return (
-    <div className='max-w-full scale-100 mx-auto bg-[#613DF2] py-16 px-4 grid lg:flex justify-center text-white'>
+    <div className='min-w-full scale-100 mx-auto bg-[#613DF2] py-16 px-4 grid lg:flex flex-row justify-center text-white'>
       <div className='items-center'>
-        <div className='md:flex justify-between'>
+        <div className='flex flex-row justify-between'>
             <a href='https://www.facebook.com/profile.php?id=100084204351788'><FaFacebookSquare size={30} className="mx-4"/> </a>
             <a href='https://www.instagram.com/cmejia49/?hl=en'> <FaInstagram size={30} className="mx-4"/> </a>
             <a href='https://twitter.com/dev_topher'> <FaTwitterSquare size={30} className="mx-4"/> </a>

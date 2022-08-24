@@ -8,7 +8,7 @@ const About = () => {
              <div className="md:flex justify-center md:w-1/2 h-[25rem]">
                 <img className="h-full w-full md:w-1/2 md:h-58" src={avatar} alt="/"/>
             </div>
-            <div className="px-[5rem] flex justify-center flex-col p-8 md:w-1/2">
+            <div className="px-[5rem] flex justify-center flex-wrap flex-col p-8 md:w-1/2">
             <h3 className='font-bold text-size justify-center text-3xl'>A FULLSTACK DEVELOPER</h3>
                 <p className=' text-slate-700 text-2xl font-thin font-sans leading-[38px]'>A problem solver and develop a digital solution. like to develop using .net core framework and c#.<br></br>
                  Intersted to create a microservice arhitecture application and currently enhancing my front-end skill.<br></br>
